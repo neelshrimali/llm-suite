@@ -1,11 +1,11 @@
 <h1><b>LLM Suite</b> - LLM-Powered Application</h1>
     
-<h2>Overview</h2>
+<h2>Overview / Usecases</h2>
     <p>This application leverages the power of advanced LLMs to offer a variety of features including:</p>
     <ul>
         <li><strong>Resume Percentage Match:</strong> Quickly match resumes against job descriptions with precision.</li>
         <li><strong>Resume Parser:</strong> Extract and structure information from resumes effortlessly.</li>
-        <li><strong>Document OCR:</strong> Convert scanned documents into editable and searchable text.</li>
+        <li><strong>Document OCR:</strong> Extract bill details e.g. Total Amount, Date and expense type.</li>
         <li><strong>Chat LLM:</strong> Engage in interactive conversations powered by a state-of-the-art language model.</li>
         <li><strong>Multiple Document RAG:</strong> Retrieve and aggregate information from multiple documents using advanced LLM techniques.</li>
         <li><strong>Single Document RAG:</strong> Retrieve and aggregate information from a single document for focused analysis.</li>
@@ -16,7 +16,7 @@
     <ol>
         <li><strong>Resume Percentage Match:</strong> Automatically compare resumes with job descriptions and return a match percentage.</li>
         <li><strong>Resume Parser:</strong> Parse resumes into structured data for easy storage and retrieval.</li>
-        <li><strong>Document OCR:</strong> Optical Character Recognition (OCR) that converts images or scanned documents into text.</li>
+        <li><strong>Document OCR:</strong> Extract bill details e.g. Total Amount, Date and expense type.</li>
         <li><strong>Chat LLM:</strong> Engage in meaningful conversations using the integrated language model.</li>
         <li><strong>Multiple Document RAG:</strong> Aggregate and analyze data across multiple documents.</li>
         <li><strong>Single Document RAG:</strong> Perform retrieval and aggregation on a single document for detailed insights.</li>

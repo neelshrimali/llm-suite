@@ -3,3 +3,5 @@ openai
 flask
 flask_cors
 PyPDF2
+PyMuPDF
+easyocr
