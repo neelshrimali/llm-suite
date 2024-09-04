@@ -13,6 +13,20 @@ app = Flask(__name__)
 CORS(app)
 reader = easyocr.Reader(['en'])
 
+# chat llm func
+def chatllm(pmt):    
+    client = OpenAI(base_url="http://localhost:1234/v1", api_key="lm-studio")
+    completion = client.chat.completions.create(
+                    model="model-identifier",
+                    messages=[          
+                      { "role": "user", 
+                        "content": pmt,
+                      }
+                      ],
+                    temperature=0.7,)   
+
+    return completion.choices[0].message.content
+
 # OCR Doc for Extract Bill details
 def parse_doc(str1):
     try:
@@ -204,6 +218,16 @@ def handle_parse_doc():
         return jsonify({"error": str(e)}), 500
 
     return jsonify(json_output)
+
+@app.route('/chatllm', methods=['POST'])
+def handle_chatllm():
+    # Assuming the PDF file is sent as form data in the request
+    pmt = request.form['prompt']  
+
+    # Parse the resume and return the structured JSON
+    json_output = chatllm(pmt)
+
+    return json_output
 
 if __name__ == "__main__":
     app.run(debug=True)
