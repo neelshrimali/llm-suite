@@ -5,3 +5,5 @@ flask_cors
 PyPDF2
 PyMuPDF
 easyocr
+argparse
+re
